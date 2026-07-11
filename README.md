@@ -1,12 +1,14 @@
 # TAO — Kung Fu Mirror
 
-Real-time martial-arts training avatar: point the phone at yourself and a photoreal 3D Shaolin monk (Gaussian-splat avatar generated from a single photo) mirrors your movement live — pose solve in 0.1 ms on-device, 48 fps on a Galaxy S23 Ultra.
+Real-time martial-arts training avatar: point the phone at yourself and a photoreal 3D Shaolin monk (Gaussian-splat avatar generated from a single photo) mirrors your movement live — pose solve in 0.05 ms on-device, 120 fps splat renderer on a Galaxy S23 Ultra.
 
-## Download
+## Download (Android)
 
-**[⬇ tao-debug.apk (Android)](https://github.com/aeoniv/tao-releases/releases/download/phase1/tao-debug.apk)** (~120 MB)
+**[⬇ tao.apk — 43 MB (recommended)](https://github.com/aeoniv/tao-releases/releases/download/phase1/tao.apk)**
 
-Install: download on your phone → allow installs from unknown sources → open **TAO** → training screen (camera permission required).
+Larger debug build (with on-screen metrics HUD): [tao-debug.apk — 126 MB](https://github.com/aeoniv/tao-releases/releases/download/phase1/tao-debug.apk)
+
+Install: download on your phone → allow installs from unknown sources → open **TAO** → tap **Train with the Monk** → grant camera access.
 
 ## Demo
 
@@ -14,4 +16,4 @@ Install: download on your phone → allow installs from unknown sources → open
 
 ## Status
 
-Phase 1 (Mirror) — gates G-A passed on real hardware. Next: reference-form demo playback, movement scoring, endurance. iOS build pending (needs a macOS toolchain).
+Phase 1 (Mirror). Latest: spine coil + wrist twist + head tracking in the pose solver, One-Euro landmark filtering, zero-backend standalone mode (bundled monk avatar). Physics layer (MuJoCo PD-tracked humanoid) spiked and greenlit. iOS build pending (needs a macOS toolchain).
